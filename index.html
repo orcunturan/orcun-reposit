@@ -18,13 +18,14 @@
       min-height: 100vh;
       margin: 0;
       text-align: center;
+      padding: 2rem 1rem;
     }
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
       color: #7b5ba7; /* lavender accent */
       font-weight: 600;
-      letter-spacing: 0.5px
+      letter-spacing: 0.5px;
     }
     p {
       font-size: 1.2rem;
@@ -34,13 +35,27 @@
       font-weight: 300;
     }
     a {
-      margin-top: 20px;
+      display: block;
+      margin-top: 20px; /* default spacing for main links */
       color: #7b5ba7;
       text-decoration: none;
       font-weight: 600;
     }
     a:hover {
       text-decoration: underline;
+    }
+    .sublink {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #6b5bb0;
+      margin-top: 6px; /* tighter space under Research */
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #6b5bb0;
+      font-style: italic;
+      text-align: center;
     }
   </style>
 </head>
@@ -52,24 +67,19 @@
   </p>
   
   <!-- Navigation links -->
-<div style="margin-top: 20px; margin-bottom: 40px;">
-  <a href="about.html">About →</a>
-  <a href="research.html">Research →</a>
-  <a href="recruitment.html" style="font-size: 0.95rem; font-weight: 500; color: #6b5bb0; text-decoration: none; margin-top: 4px;">
-    Participate in my ADHD study →
-  </a>
-  <a href="contact.html">Contact →</a>
-</div>
+  <div style="margin-top: 20px; margin-bottom: 40px;">
+    <a href="about.html">About →</a>
+    <a href="research.html">Research →</a>
+    <a href="recruitment.html" class="sublink">
+      Participate in my ADHD study →
+    </a>
+    <a href="contact.html">Contact →</a>
+  </div>
   
-  <footer style="
-  margin-top: 3rem; 
-  font-size: 0.8rem; 
-  color: #6b5bb0; 
-  font-style: italic; 
-  text-align: center;
-">
-  &copy; orçun turan · last updated October 2025
-</footer>
+  <footer>
+    &copy; orçun turan · last updated October 2025
+  </footer>
 
 </body>
 </html>
+
